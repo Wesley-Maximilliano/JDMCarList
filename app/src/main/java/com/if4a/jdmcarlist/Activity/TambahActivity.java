@@ -72,7 +72,7 @@ public class TambahActivity extends AppCompatActivity {
     private void tambahKuliner(){
 
         APIRequestData ARD = RetroServer.konekRetrofit().create(APIRequestData.class);
-        Call<ModelResponse> proses = ARD.ardCreate(nama,produsen,masaProduksi,sejarah);
+        Call<ModelResponse> proses = ARD.ardCreate(nama,produsen,masaProduksi,sejarah,gambar);
 
         proses.enqueue(new Callback<ModelResponse>() {
             @Override

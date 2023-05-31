@@ -48,7 +48,7 @@ public class AdapterJDMCar extends RecyclerView.Adapter<AdapterJDMCar.VHJdm>{
         ModelJDMCar MK = listJDM.get(position);
 
         holder.tvId.setText(MK.getId());
-        holder.tvNama.setText(MK.getNama());
+        holder.tvNama.setText(MK.getNama_mobil());
         holder.tvProdusen.setText(MK.getProdusen());
         holder.tvMasaProduksi.setText(MK.getMasa_produksi());
         holder.tvSejarah.setText(MK.getSejarah());

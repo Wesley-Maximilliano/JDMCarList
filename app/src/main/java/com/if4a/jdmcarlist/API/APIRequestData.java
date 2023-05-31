@@ -18,18 +18,19 @@ public interface APIRequestData {
             @Field("nama_mobil") String nama,
             @Field("produsen") String produsen,
             @Field("masa_produksi") String masa_produksi,
-            @Field("sejarah") String sejarah
-            //@Field("gambar") String gambar
+            @Field("sejarah") String sejarah,
+            @Field("gambar") String gambar
     );
 
     @FormUrlEncoded
     @POST("update.php")
     Call<ModelResponse> ardUpdate(
+            @Field("id") String id,
             @Field("nama_mobil") String nama,
             @Field("produsen") String produsen,
             @Field("masa_produksi") String masa_produksi,
-            @Field("sejarah") String sejarah
-            //@Field("gambar_mobil") String gambar
+            @Field("sejarah") String sejarah,
+            @Field("gambar_mobil") String gambar
     );
 
     @FormUrlEncoded

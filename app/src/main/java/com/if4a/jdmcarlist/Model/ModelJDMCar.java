@@ -1,14 +1,14 @@
 package com.if4a.jdmcarlist.Model;
 
 public class ModelJDMCar {
-    private  String id,nama,produsen,masa_produksi, sejarah, gambar;
+    private  String id,nama_mobil,produsen,masa_produksi, sejarah, gambar;
 
     public String getId() {
         return id;
     }
 
-    public String getNama() {
-        return nama;
+    public String getNama_mobil() {
+        return nama_mobil;
     }
 
     public String getProdusen() {

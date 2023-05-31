@@ -88,7 +88,7 @@ public class UbahActivity extends AppCompatActivity {
     private void ubahJdm(){
 
         APIRequestData ARD = RetroServer.konekRetrofit().create(APIRequestData.class);
-        Call<ModelResponse> proses = ARD.ardUpdate(yId,nama,produsen,masaProduksi,sejarah);
+        Call<ModelResponse> proses = ARD.ardUpdate(yId,nama,produsen,masaProduksi,sejarah,gambar);
 
         proses.enqueue(new Callback<ModelResponse>() {
             @Override
