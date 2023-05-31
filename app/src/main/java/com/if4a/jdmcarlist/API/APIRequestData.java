@@ -15,23 +15,21 @@ public interface APIRequestData {
     @FormUrlEncoded
     @POST("create.php")
     Call<ModelResponse> ardCreate(
-            @Field("nama") String nama,
+            @Field("nama_mobil") String nama,
             @Field("produsen") String produsen,
             @Field("masa_produksi") String masa_produksi,
-            @Field("sejarah") String sejarah,
-            @Field("gambar") String gambar
-
-
+            @Field("sejarah") String sejarah
+            //@Field("gambar") String gambar
     );
 
     @FormUrlEncoded
     @POST("update.php")
     Call<ModelResponse> ardUpdate(
-            @Field("nama") String nama,
+            @Field("nama_mobil") String nama,
             @Field("produsen") String produsen,
             @Field("masa_produksi") String masa_produksi,
-            @Field("sejarah") String sejarah,
-            @Field("gambar") String gambar
+            @Field("sejarah") String sejarah
+            //@Field("gambar_mobil") String gambar
     );
 
     @FormUrlEncoded
